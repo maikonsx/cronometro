@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cronômetros</title>
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/css.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            MARATONA
+        </a>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            DA
+        </a>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            IDENTIFICAÇÃO
+        </a>
+
+        <div class="timers">
+
+            <div class="timer" id="timer1">
+
+                <h1><i class="fa-solid fa-person-running"></i> EQUIPE 1</h1>
+                <div class="display" id="display1">00:00:00</div>
+                <button class="play-pause"
+                    onclick="toggleTimer(1)">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button onclick="lapTime(1)"><i
+                        class="fa-solid fa-flag"></i></button>
+                <button onclick="restartTimer(1)"><i
+                        class="fa-solid fa-redo"></i></button>
+                <div class="laps" id="laps1"></div>
+            </div>
+
+            <div class="timer" id="timer2">
+                <h1><i class="fa-solid fa-person-walking"></i> EQUIPE 2</h1>
+                <div class="display" id="display2">00:00:00</div>
+                <button class="play-pause"
+                    onclick="toggleTimer(2)">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button onclick="lapTime(2)"><i
+                        class="fa-solid fa-flag"></i></button>
+                <button onclick="restartTimer(2)"><i
+                        class="fa-solid fa-redo"></i></button>
+                <div class="laps" id="laps2"></div>
+            </div>
+
+            <div class="timer" id="timer3">
+                <h1><i class="fa-solid fa-person-snowboarding"></i> EQUIPE
+                    3</h1>
+                <div class="display" id="display3">00:00:00</div>
+                <button class="play-pause"
+                    onclick="toggleTimer(3)">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button onclick="lapTime(3)"><i
+                        class="fa-solid fa-flag"></i></button>
+                <button onclick="restartTimer(3)"><i
+                        class="fa-solid fa-redo"></i></button>
+                <div class="laps" id="laps3"></div>
+            </div>
+
+            <div class="timer" id="timer4">
+                <h1><i class="fa-solid fa-person-skiing"></i> EQUIPE 4</h1>
+                <div class="display" id="display4">00:00:00</div>
+                <button class="play-pause"
+                    onclick="toggleTimer(4)">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button onclick="lapTime(4)"><i
+                        class="fa-solid fa-flag"></i></button>
+                <button onclick="restartTimer(4)"><i
+                        class="fa-solid fa-redo"></i></button>
+                <div class="laps" id="laps4"></div>
+            </div>
+        </div>
+
+        <div class="audio" id="audio1">
+            <audio id="musica" src="src/musicas/musica.mp3"></audio>
+            <!-- Botões de controle -->
+            <button class="button" id="play"><i
+                    class="fa-solid fa-play"></i></button>
+            <button class="button" id="pause"><i
+                    class="fa-solid fa-pause"></i></button>
+            <button class="button" id="reset"><i
+                    class="fa-solid fa-redo"></i></button>
+        </div>
+
+        <script src="src/script/script.js"></script>
+        <script src="src/script/musica.js"></script>
+    </body>
+</html>
